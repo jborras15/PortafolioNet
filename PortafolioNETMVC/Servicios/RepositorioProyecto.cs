@@ -2,7 +2,12 @@ using PortafolioNETMVC.Models;
 
 namespace PortafolioNETMVC.Servicios;
 
-public class RepositorioProyecto
+public interface IRepositorioProyecto
+{
+    List<Proyecto> ObtenerProyectos();
+}
+
+public class RepositorioProyecto :IRepositorioProyecto
 {
     public List<Proyecto> ObtenerProyectos()
     {
@@ -38,5 +43,4 @@ public class RepositorioProyecto
             
         };
     }
-
-}
+} 

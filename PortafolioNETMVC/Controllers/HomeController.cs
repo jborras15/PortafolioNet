@@ -8,8 +8,8 @@ namespace PortafolioNETMVC.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private readonly RepositorioProyecto _repositorioProyecto;
-    public HomeController(ILogger<HomeController> logger, RepositorioProyecto repositorioProyecto)
+    private readonly IRepositorioProyecto _repositorioProyecto;
+    public HomeController(ILogger<HomeController> logger, IRepositorioProyecto repositorioProyecto)
     {
         _logger = logger;
         _repositorioProyecto = repositorioProyecto;
