@@ -8,11 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac0db951-10e4-450a-878c-98f174d109f7" name="Changes" comment="se borro elementos que eran de pruebas en el Index.cshtml&#10;&#10;****  vista parciales **&#10;y se agrego la etiqueta partial para agregar vista en el Index.cshtml&#10;&#10;_Presentacion.cshtml  tiene la parte de presentacion de la pagina &#10;&#10;_Habilidades.cshtml tiene la parte de la habilidades del pagina&#10;&#10;_Layout.cshtml se le agrego el link iconos de bootrap&#10;&#10;En el HomeController.cs se borro el paso de informacion por fuertemente tipado ya era ejemplos.">
-      <change afterPath="$PROJECT_DIR$/PortafolioNETMVC/Models/HomeIndexViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortafolioNETMVC/Models/Proyecto.cs" afterDir="false" />
+    <list default="true" id="ac0db951-10e4-450a-878c-98f174d109f7" name="Changes" comment="se creo la clase Proyecto.cs la cual tiene los datos del proyecto.&#10;y HomeIndexViewModel.cs para crear un enumerable , para luego utilizarlo ala hora de llamar nuestros proyectos.&#10;&#10;en el HomeController.cs creamos un metodo obtenerProyecto  el cual retorana una  lista de Proyecto&#10;en el metodo Index de HomeController.cs utilizamos el metodo obtenerProyectos.&#10;take(3) es para mostrar la cantidad de proyecto que queremos utilizar.&#10;luego esa lista de proyectos se la pasamos al view .&#10;&#10;en el index utilizamos @model para decir el tipo de datos que vamos a resivir&#10;en el index creamos unas card , la cuales desplegamos la informacion de cada proyectos">
+      <change afterPath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortafolioNETMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortafolioNETMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +28,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -42,20 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.PortafolioNETMVC">
     <configuration name="PortafolioNETMVC" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/PortafolioNETMVC/PortafolioNETMVC.csproj" />
@@ -97,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661290030896</updated>
       <workItem from="1661290039986" duration="5297000" />
-      <workItem from="1661346892263" duration="11914000" />
+      <workItem from="1661346892263" duration="14455000" />
     </task>
     <task id="LOCAL-00001" summary="Comenzando con .Net mvc">
       <created>1661290171674</created>
@@ -120,7 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661357372459</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="se creo la clase Proyecto.cs la cual tiene los datos del proyecto. &#10;y HomeIndexViewModel.cs para crear un enumerable , para luego utilizarlo ala hora de llamar nuestros proyectos. &#10;&#10;en el HomeController.cs creamos un metodo obtenerProyecto  el cual retorana una  lista de Proyecto&#10;en el metodo Index de HomeController.cs utilizamos el metodo obtenerProyectos. &#10;take(3) es para mostrar la cantidad de proyecto que queremos utilizar.&#10;luego esa lista de proyectos se la pasamos al view .&#10;&#10;&#10;en el index utilizamos @model para decir el tipo de datos que vamos a resivir&#10;en el index creamos unas card , la cuales desplegamos la informacion de cada proyectos">
+      <created>1661361380472</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661361380472</updated>
+    </task>
+    <task id="LOCAL-00005" summary="se creo la clase Proyecto.cs la cual tiene los datos del proyecto.&#10;y HomeIndexViewModel.cs para crear un enumerable , para luego utilizarlo ala hora de llamar nuestros proyectos.&#10;&#10;en el HomeController.cs creamos un metodo obtenerProyecto  el cual retorana una  lista de Proyecto&#10;en el metodo Index de HomeController.cs utilizamos el metodo obtenerProyectos.&#10;take(3) es para mostrar la cantidad de proyecto que queremos utilizar.&#10;luego esa lista de proyectos se la pasamos al view .&#10;&#10;en el index utilizamos @model para decir el tipo de datos que vamos a resivir&#10;en el index creamos unas card , la cuales desplegamos la informacion de cada proyectos">
+      <created>1661361455064</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661361455064</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +158,8 @@
     <MESSAGE value="Comenzando con .Net mvc" />
     <MESSAGE value="Se creo un modelo Persona.cs el cual tiene nombre y edad. &#10;se agrego el css para editar el tamaño de la foto &#10;&#10;Razor &#10;En el controlador se inicializo una variale tipo Persona y luego se inyecto el modelo en el view&#10;&#10;&#10;en el idex se agrego @Model para poder mostrar los datos desde el controlador  y el @model para indicarle el tipo de tado que va a resivir &#10;&#10;tambien se agrego codigo c# en el idex directamente&#10;&#10;list y date foreach  if else" />
     <MESSAGE value="se borro elementos que eran de pruebas en el Index.cshtml&#10;&#10;****  vista parciales **&#10;y se agrego la etiqueta partial para agregar vista en el Index.cshtml&#10;&#10;_Presentacion.cshtml  tiene la parte de presentacion de la pagina &#10;&#10;_Habilidades.cshtml tiene la parte de la habilidades del pagina&#10;&#10;_Layout.cshtml se le agrego el link iconos de bootrap&#10;&#10;En el HomeController.cs se borro el paso de informacion por fuertemente tipado ya era ejemplos." />
-    <option name="LAST_COMMIT_MESSAGE" value="se borro elementos que eran de pruebas en el Index.cshtml&#10;&#10;****  vista parciales **&#10;y se agrego la etiqueta partial para agregar vista en el Index.cshtml&#10;&#10;_Presentacion.cshtml  tiene la parte de presentacion de la pagina &#10;&#10;_Habilidades.cshtml tiene la parte de la habilidades del pagina&#10;&#10;_Layout.cshtml se le agrego el link iconos de bootrap&#10;&#10;En el HomeController.cs se borro el paso de informacion por fuertemente tipado ya era ejemplos." />
+    <MESSAGE value="se creo la clase Proyecto.cs la cual tiene los datos del proyecto. &#10;y HomeIndexViewModel.cs para crear un enumerable , para luego utilizarlo ala hora de llamar nuestros proyectos. &#10;&#10;en el HomeController.cs creamos un metodo obtenerProyecto  el cual retorana una  lista de Proyecto&#10;en el metodo Index de HomeController.cs utilizamos el metodo obtenerProyectos. &#10;take(3) es para mostrar la cantidad de proyecto que queremos utilizar.&#10;luego esa lista de proyectos se la pasamos al view .&#10;&#10;&#10;en el index utilizamos @model para decir el tipo de datos que vamos a resivir&#10;en el index creamos unas card , la cuales desplegamos la informacion de cada proyectos" />
+    <MESSAGE value="se creo la clase Proyecto.cs la cual tiene los datos del proyecto.&#10;y HomeIndexViewModel.cs para crear un enumerable , para luego utilizarlo ala hora de llamar nuestros proyectos.&#10;&#10;en el HomeController.cs creamos un metodo obtenerProyecto  el cual retorana una  lista de Proyecto&#10;en el metodo Index de HomeController.cs utilizamos el metodo obtenerProyectos.&#10;take(3) es para mostrar la cantidad de proyecto que queremos utilizar.&#10;luego esa lista de proyectos se la pasamos al view .&#10;&#10;en el index utilizamos @model para decir el tipo de datos que vamos a resivir&#10;en el index creamos unas card , la cuales desplegamos la informacion de cada proyectos" />
+    <option name="LAST_COMMIT_MESSAGE" value="se creo la clase Proyecto.cs la cual tiene los datos del proyecto.&#10;y HomeIndexViewModel.cs para crear un enumerable , para luego utilizarlo ala hora de llamar nuestros proyectos.&#10;&#10;en el HomeController.cs creamos un metodo obtenerProyecto  el cual retorana una  lista de Proyecto&#10;en el metodo Index de HomeController.cs utilizamos el metodo obtenerProyectos.&#10;take(3) es para mostrar la cantidad de proyecto que queremos utilizar.&#10;luego esa lista de proyectos se la pasamos al view .&#10;&#10;en el index utilizamos @model para decir el tipo de datos que vamos a resivir&#10;en el index creamos unas card , la cuales desplegamos la informacion de cada proyectos" />
   </component>
 </project>
