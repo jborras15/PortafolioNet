@@ -1,8 +1,9 @@
-@model HomeIndexViewModel
-// si no agregamos la linea de arriba no arroja error , pero si cambiamos el nombre de proyecto a otro nombre 
-// ala hora de copilacion va arrojar error, mientra que con la linea de arriba nos avisa ante de copilacion 
+@model IEnumerable<Proyecto>
+<!-- se coloca directamente la linea de arriba para que se pueda ser reutilizable -->
 
-@if (Model.Proyectos is not  null)
+
+<!-- ahora no es necesario Model.proyecto ahora solo basta con el Model -->
+@if (Model is not  null)
 {
     <div class="text-center" style="padding-top: 6rem">
         <h1>Mis trabajos recientes</h1>
@@ -11,7 +12,7 @@
     
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            @foreach (var proyectos in Model.Proyectos)
+            @foreach (var proyectos in Model)
             {
                 <div class="col">
                     <div class="card h-100">
@@ -25,7 +26,7 @@
                                rel="noopener noreferrer" >Visitar</a>
                         </div>
                     </div>
-                </div>    
+                </div>  
             }
         </div>
     </div>
