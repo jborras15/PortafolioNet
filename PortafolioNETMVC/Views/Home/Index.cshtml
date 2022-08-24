@@ -1,47 +1,6 @@
-﻿@using System.Security.Cryptography
-@model Persona
-@{
+﻿@{
     //Nombre de la pagina
     ViewData["Title"] = "Home Page";
-    //podemos crear un metodo aqui tambien 
-    DateTime hoy = DateTime.Now;
-    var nombres = new List<object>()
-    {
-        "Felipe",
-        "Claudia",
-        "Roberto"
-    };
 }
-
-<div class="text-center">
-    <h1 class="display-4">Soy @Model.Nombre (@Model.Edad)</h1>
-    <h2>Soy un desarrolador en tecnologías .NET</h2>
-    <h4>@hoy.ToString("F")</h4>
-    
-    <ul>
-        @foreach (var nombre in nombres)
-        {
-            <li>
-                @nombre
-            </li>
-        }
-    </ul>
-    
-    @if (Model.Edad >= 18)
-    {
-        <h4>
-            Eres mayor de edad! Puedes pasar 
-            <button>
-                Entrar
-            </button>
-        </h4>
-    }
-    else
-    { 
-        <h4>
-            Eres menor!
-        </h4>
-    }
-    <img id="foto"  src="~/imagenes/20220605_170304 (1).jpg" alt="Foto de Jorge"/>
-
-</div>
+<partial name="_Presentacion"/>
+<partial name="_Habilidades"/>
