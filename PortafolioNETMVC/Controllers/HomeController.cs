@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using PortafolioNETMVC.Models;
+using PortafolioNETMVC.Servicios;
 
 namespace PortafolioNETMVC.Controllers;
 
@@ -15,46 +16,13 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var proyectos = ObtenerProyectos().Take(3).ToList();
-        var modelo = new HomeIndexViewModel() { };
+        var reporsitorioProyectos = new RepositorioProyecto();
+        var proyectos = reporsitorioProyectos.ObtenerProyectos().Take(3).ToList();
+        var modelo = new HomeIndexViewModel() { Proyectos = proyectos};
         return View(modelo);
     }
 
-    private List<Proyecto> ObtenerProyectos()
-    {
-        return new List<Proyecto>()
-        {
-            new Proyecto()
-            {
-                Titulo = "Amazon",
-                Descripcion = "E-Commerce realizado en ASP.NET Core",
-                Link = "https://amazon.com",
-                ImagenURL = "/imagenes/amazon.png"
-            },
-            new Proyecto()
-            {
-                Titulo = "New York Times",
-                Descripcion = "Página de noticias en Angular",
-                Link = "https://nytimes.com",
-                ImagenURL = "/imagenes/nyt.png"
-            },
-            new Proyecto()
-            {
-                Titulo = "Reddit",
-                Descripcion = "Red social para compartir en comunidades",
-                Link = "https://reddit.com",
-                ImagenURL = "/imagenes/reddit.png"
-            },new Proyecto()
-            {
-                Titulo = "Steam",
-                Descripcion = "Tienda en linea para comprar video juegos",
-                Link = "https://steam.com",
-                ImagenURL = "/imagenes/steam.png"
-            },
-            
-        };
-    }
-
+  
     public IActionResult Privacy()
     {
         return View();

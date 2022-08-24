@@ -8,11 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac0db951-10e4-450a-878c-98f174d109f7" name="Changes" comment="se movio parte del codigo del index a una nueva vista parcial , &#10; en _SeccionProyectos.cshtml se agrego @model HomeIndexViewModel para que no indique si hay error ala hora de creacion y no ala hora de copilacion , pero ya no seria reutilizable . en el proximo commit indicamos la forma correcta">
+    <list default="true" id="ac0db951-10e4-450a-878c-98f174d109f7" name="Changes" comment="se cambio el model de el _SeccionProyectos.cshtml para que pueda ser reutilizable &#10;&#10;&#10;despues de la modificaciones de &#10;_SeccionProyectos.cshtml se debe tambien pasar el modelo al partial name=&quot;_SeccionProyectos&quot;">
+      <change afterPath="$PROJECT_DIR$/PortafolioNETMVC/Servicios/RepositorioProyecto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortafolioNETMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortafolioNETMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Models/HomeIndexViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Models/HomeIndexViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,7 @@
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -99,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661290030896</updated>
       <workItem from="1661290039986" duration="5297000" />
-      <workItem from="1661346892263" duration="18208000" />
+      <workItem from="1661346892263" duration="19159000" />
     </task>
     <task id="LOCAL-00001" summary="Comenzando con .Net mvc">
       <created>1661290171674</created>
@@ -143,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661366788491</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="se cambio el model de el _SeccionProyectos.cshtml para que pueda ser reutilizable &#10;&#10;&#10;despues de la modificaciones de &#10;_SeccionProyectos.cshtml se debe tambien pasar el modelo al partial name=&quot;_SeccionProyectos&quot;">
+      <created>1661370535258</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661370535258</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +179,7 @@
     <MESSAGE value="se creo la clase Proyecto.cs la cual tiene los datos del proyecto. &#10;y HomeIndexViewModel.cs para crear un enumerable , para luego utilizarlo ala hora de llamar nuestros proyectos. &#10;&#10;en el HomeController.cs creamos un metodo obtenerProyecto  el cual retorana una  lista de Proyecto&#10;en el metodo Index de HomeController.cs utilizamos el metodo obtenerProyectos. &#10;take(3) es para mostrar la cantidad de proyecto que queremos utilizar.&#10;luego esa lista de proyectos se la pasamos al view .&#10;&#10;&#10;en el index utilizamos @model para decir el tipo de datos que vamos a resivir&#10;en el index creamos unas card , la cuales desplegamos la informacion de cada proyectos" />
     <MESSAGE value="se creo la clase Proyecto.cs la cual tiene los datos del proyecto.&#10;y HomeIndexViewModel.cs para crear un enumerable , para luego utilizarlo ala hora de llamar nuestros proyectos.&#10;&#10;en el HomeController.cs creamos un metodo obtenerProyecto  el cual retorana una  lista de Proyecto&#10;en el metodo Index de HomeController.cs utilizamos el metodo obtenerProyectos.&#10;take(3) es para mostrar la cantidad de proyecto que queremos utilizar.&#10;luego esa lista de proyectos se la pasamos al view .&#10;&#10;en el index utilizamos @model para decir el tipo de datos que vamos a resivir&#10;en el index creamos unas card , la cuales desplegamos la informacion de cada proyectos" />
     <MESSAGE value="se movio parte del codigo del index a una nueva vista parcial , &#10; en _SeccionProyectos.cshtml se agrego @model HomeIndexViewModel para que no indique si hay error ala hora de creacion y no ala hora de copilacion , pero ya no seria reutilizable . en el proximo commit indicamos la forma correcta" />
-    <option name="LAST_COMMIT_MESSAGE" value="se movio parte del codigo del index a una nueva vista parcial , &#10; en _SeccionProyectos.cshtml se agrego @model HomeIndexViewModel para que no indique si hay error ala hora de creacion y no ala hora de copilacion , pero ya no seria reutilizable . en el proximo commit indicamos la forma correcta" />
+    <MESSAGE value="se cambio el model de el _SeccionProyectos.cshtml para que pueda ser reutilizable &#10;&#10;&#10;despues de la modificaciones de &#10;_SeccionProyectos.cshtml se debe tambien pasar el modelo al partial name=&quot;_SeccionProyectos&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="se cambio el model de el _SeccionProyectos.cshtml para que pueda ser reutilizable &#10;&#10;&#10;despues de la modificaciones de &#10;_SeccionProyectos.cshtml se debe tambien pasar el modelo al partial name=&quot;_SeccionProyectos&quot;" />
   </component>
 </project>
