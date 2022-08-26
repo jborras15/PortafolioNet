@@ -46,6 +46,11 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Contacto(ContactoViewModel contactoViewModel)
     {
+        return RedirectToAction("Gracias");
+    }
+
+    public IActionResult Gracias()
+    {
         return View();
     }
 }

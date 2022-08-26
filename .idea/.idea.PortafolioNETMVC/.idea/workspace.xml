@@ -8,11 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac0db951-10e4-450a-878c-98f174d109f7" name="Changes" comment="Se creo un formulario en el archibo Contacto.cshtml  &#10;&#10;asp-controller sirve para indicar donde esta el controlador que le va a indicar la accion&#10;&#10;asp-action indica la accion del formulario&#10;&#10;se agrego la ruto en el _Layout">
-      <change afterPath="$PROJECT_DIR$/PortafolioNETMVC/Models/ContactoViewModel.cs" afterDir="false" />
+    <list default="true" id="ac0db951-10e4-450a-878c-98f174d109f7" name="Changes" comment="se creo una clase ContactoViewModel.cs con los datos del formulario &#10;&#10;se creo el metodo post de Contacto para enviar la  informacion .&#10;&#10;cuando se actualiza la pagina podemos ver que sale un mensaje de reenviar la informacion del formulario lo cual esta mal. &#10;&#10;En el proximo capitulo vamos arreglar ese problema">
+      <change afterPath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/Gracias.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortafolioNETMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortafolioNETMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/Contacto.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/Contacto.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/Contacto.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/_Presentacion.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
@@ -103,7 +104,7 @@
       <updated>1661290030896</updated>
       <workItem from="1661290039986" duration="5297000" />
       <workItem from="1661346892263" duration="27362000" />
-      <workItem from="1661526400421" duration="6482000" />
+      <workItem from="1661526400421" duration="7829000" />
     </task>
     <task id="LOCAL-00001" summary="Comenzando con .Net mvc">
       <created>1661290171674</created>
@@ -196,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661532224034</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="se creo una clase ContactoViewModel.cs con los datos del formulario &#10;&#10;se creo el metodo post de Contacto para enviar la  informacion .&#10;&#10;cuando se actualiza la pagina podemos ver que sale un mensaje de reenviar la informacion del formulario lo cual esta mal. &#10;&#10;En el proximo capitulo vamos arreglar ese problema">
+      <created>1661533392897</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661533392897</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +238,8 @@
     <MESSAGE value="con configuration podemos traer informacion de los provedores de configuration en este caso como es local seria en el appsettings.Development.json" />
     <MESSAGE value="se borro lo echo en el comit pasado ya que son muestra .&#10;&#10;se borro el codigo de la lista de proyectos de la _SeccionProyectos.cshtml para crea una vista parcial de la lista para compartila  con una vista nueva llamada Proyectos. &#10;&#10;se agrego una nueva vista Proyectos.cshtml en la cual tenemos una vista parcial de la lista de proyectos. &#10;&#10;_Layout.cshtml se agrego la ruta de proyectos" />
     <MESSAGE value="Se creo un formulario en el archibo Contacto.cshtml  &#10;&#10;asp-controller sirve para indicar donde esta el controlador que le va a indicar la accion&#10;&#10;asp-action indica la accion del formulario&#10;&#10;se agrego la ruto en el _Layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se creo un formulario en el archibo Contacto.cshtml  &#10;&#10;asp-controller sirve para indicar donde esta el controlador que le va a indicar la accion&#10;&#10;asp-action indica la accion del formulario&#10;&#10;se agrego la ruto en el _Layout" />
+    <MESSAGE value="se creo una clase ContactoViewModel.cs con los datos del formulario &#10;&#10;se creo el metodo post de Contacto para enviar la  informacion .&#10;&#10;cuando se actualiza la pagina podemos ver que sale un mensaje de reenviar la informacion del formulario lo cual esta mal. &#10;&#10;En el proximo capitulo vamos arreglar ese problema" />
+    <option name="LAST_COMMIT_MESSAGE" value="se creo una clase ContactoViewModel.cs con los datos del formulario &#10;&#10;se creo el metodo post de Contacto para enviar la  informacion .&#10;&#10;cuando se actualiza la pagina podemos ver que sale un mensaje de reenviar la informacion del formulario lo cual esta mal. &#10;&#10;En el proximo capitulo vamos arreglar ese problema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -243,7 +252,7 @@
               <option value="1270" />
             </startOffsets>
             <endOffsets>
-              <option value="1284" />
+              <option value="1275" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
