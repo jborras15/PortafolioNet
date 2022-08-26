@@ -9,13 +9,15 @@ namespace PortafolioNETMVC.Controllers;
 public class HomeController : Controller
 {
     private readonly IRepositorioProyecto _repositorioProyecto;
-    
+    private readonly IservicioEmail _servicioEmail;
+
 
     public HomeController(
-        IRepositorioProyecto repositorioProyecto)
+        IRepositorioProyecto repositorioProyecto,
+         IservicioEmail servicioEmail)
     {
         _repositorioProyecto = repositorioProyecto;
-        
+        _servicioEmail = servicioEmail;
     }
 
     public IActionResult Index()
@@ -44,8 +46,9 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Contacto(ContactoViewModel contactoViewModel)
+    public async Task<IActionResult> Contacto(ContactoViewModel contactoViewModel)
     {
+        await _servicioEmail.Enviar(contactoViewModel);
         return RedirectToAction("Gracias");
     }
 
