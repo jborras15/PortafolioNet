@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 // inyectamos nuesta depencias aqui
 builder.Services.AddTransient<IRepositorioProyecto, RepositorioProyecto>();
+builder.Services.AddTransient<IservicioEmail, ServiciosEmailSendGrip>();
 
 var app = builder.Build();
 
