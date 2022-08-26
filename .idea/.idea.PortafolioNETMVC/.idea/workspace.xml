@@ -8,11 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac0db951-10e4-450a-878c-98f174d109f7" name="Changes" comment="Inyeccion de dependencias&#10; &#10;En el Program.cs colocamos nuestro RepositorioProyecto con builder.Services.AddTransient.&#10;&#10;Luego borramos en el Index HomeController.cs la instancia de new RespositorioProyecto().&#10;&#10;inyectamos el repositorio en el controlador de HomeController.cs y luego lo utilizamos en el index HomeController.cs y llamamos su metodo ObternerProyectos">
+    <list default="true" id="ac0db951-10e4-450a-878c-98f174d109f7" name="Changes" comment="Se cambio el nombre de imagen &#10;&#10;_Logger sirve para pasar un mensaje por consola, se pueden clasificar en 6 y se puede clasificar para indicarle que tipo de mensaje quiere que te muestre. &#10;&#10;critical&#10;Error&#10;Warning&#10;Iformation&#10;Debug&#10;Trace">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortafolioNETMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortafolioNETMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Servicios/RepositorioProyecto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Servicios/RepositorioProyecto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/_Presentacion.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/Views/Home/_Presentacion.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortafolioNETMVC/wwwroot/imagenes/20220605_170309 (1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PortafolioNETMVC/wwwroot/imagenes/mifoto.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +33,15 @@
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Models/HomeIndexViewModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Servicios/RepositorioProyecto.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/_Presentacion.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Home/_SeccionProyectos.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/jborras15/RiderProjects/PortafolioNETMVC/PortafolioNETMVC/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
@@ -49,21 +55,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "HotReloadSettingsPage",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;HotReloadSettingsPage&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.PortafolioNETMVC">
     <configuration name="PortafolioNETMVC" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/PortafolioNETMVC/PortafolioNETMVC.csproj" />
@@ -105,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661290030896</updated>
       <workItem from="1661290039986" duration="5297000" />
-      <workItem from="1661346892263" duration="23937000" />
+      <workItem from="1661346892263" duration="27362000" />
     </task>
     <task id="LOCAL-00001" summary="Comenzando con .Net mvc">
       <created>1661290171674</created>
@@ -170,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661376430540</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Inyecion de dependencia con interfaces&#10;&#10;se creo una interfaz en el RepositorioProyecto.cs. &#10;&#10;luego se coloco que la clase RepositorioProyecto implementara la interfaces.&#10;&#10;en el Program.cs modificamos el builder.Services.AddTransient agregando la interfaces y al lado le decimos cuando la llamen va a pasar una instancia de RepositorioProyecto.cs.&#10;&#10;&#10;En HomeController.cs modificamos  el controlador y ahaora le pasamos como paraametro la intefaz.&#10;&#10;&#10;&#10;&#10;luego">
+      <created>1661378153407</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661378153407</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +213,7 @@
     <MESSAGE value="se cambio el model de el _SeccionProyectos.cshtml para que pueda ser reutilizable &#10;&#10;&#10;despues de la modificaciones de &#10;_SeccionProyectos.cshtml se debe tambien pasar el modelo al partial name=&quot;_SeccionProyectos&quot;" />
     <MESSAGE value="responsabilidad unica&#10;&#10;se creo la clase RepositorioProyecto.cs para separa el controlador de la tarea de obtener los proyectos, por lo cual se movio el metodo ObtenerProyecto al RepositorioProyecto.cs&#10;&#10;lo cual en HomeController.cs se instancio el repositorio" />
     <MESSAGE value="Inyeccion de dependencias&#10; &#10;En el Program.cs colocamos nuestro RepositorioProyecto con builder.Services.AddTransient.&#10;&#10;Luego borramos en el Index HomeController.cs la instancia de new RespositorioProyecto().&#10;&#10;inyectamos el repositorio en el controlador de HomeController.cs y luego lo utilizamos en el index HomeController.cs y llamamos su metodo ObternerProyectos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inyeccion de dependencias&#10; &#10;En el Program.cs colocamos nuestro RepositorioProyecto con builder.Services.AddTransient.&#10;&#10;Luego borramos en el Index HomeController.cs la instancia de new RespositorioProyecto().&#10;&#10;inyectamos el repositorio en el controlador de HomeController.cs y luego lo utilizamos en el index HomeController.cs y llamamos su metodo ObternerProyectos" />
+    <MESSAGE value="Inyecion de dependencia con interfaces&#10;&#10;se creo una interfaz en el RepositorioProyecto.cs. &#10;&#10;luego se coloco que la clase RepositorioProyecto implementara la interfaces.&#10;&#10;en el Program.cs modificamos el builder.Services.AddTransient agregando la interfaces y al lado le decimos cuando la llamen va a pasar una instancia de RepositorioProyecto.cs.&#10;&#10;&#10;En HomeController.cs modificamos  el controlador y ahaora le pasamos como paraametro la intefaz.&#10;&#10;&#10;&#10;&#10;luego" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inyecion de dependencia con interfaces&#10;&#10;se creo una interfaz en el RepositorioProyecto.cs. &#10;&#10;luego se coloco que la clase RepositorioProyecto implementara la interfaces.&#10;&#10;en el Program.cs modificamos el builder.Services.AddTransient agregando la interfaces y al lado le decimos cuando la llamen va a pasar una instancia de RepositorioProyecto.cs.&#10;&#10;&#10;En HomeController.cs modificamos  el controlador y ahaora le pasamos como paraametro la intefaz.&#10;&#10;&#10;&#10;&#10;luego" />
   </component>
 </project>
